@@ -4,9 +4,361 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3189bde7f5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <script src="app.js"></script>
+    <div class="header"></div>
+    <div class="navDiv">
+      <div class="navbar ecommerce">
+        <div class="navLogo">LOGO</div>
+        <div class="navSearch ecommerce">
+          <label><i class="fab fa-searchengin"></i></label>
+          <input placeholder="Quick search anything" />
+        </div>
+        <div class="navLinks ecommerce">
+          <button class="navBtn ecommerce">Men</button>
+          <button class="navBtn ecommerce">Women</button>
+          <button class="navBtn ecommerce">Kids</button>
+          <button class="navBtn ecommerce">Offers</button>
+        </div>
+        <div class="navAction ecommerce">
+          <button class="btn unstyled">
+            <i class="fas fa-user-circle"></i>
+          </button>
+          <button class="btn unstyled"><i class="fab fa-gratipay"></i></button>
+          <button class="btn unstyled">
+            <i class="fas fa-shopping-bag"></i>
+          </button>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="navLogo">
+          <img
+            src="https://thumbs.dreamstime.com/b/letter-gg-simple-logo-icon-design-vector-simple-circle-logo-vector-illustration-letter-gg-simple-logo-icon-design-vector-180925896.jpg"
+            alt="logo"
+          />
+        </div>
+        <div class="navLinks">
+          <button class="navBtn">Home</button>
+          <button class="navBtn">About</button>
+          <button class="navBtn">Projects</button>
+          <button class="navBtn">Contact</button>
+        </div>
+        <div class="navAction">
+          <button class="btn">Sign Out</button>
+        </div>
+      </div>
+    </div>
+    <div class="avatarDiv">
+      <div>
+        <img
+          src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
+          class="avatar"
+        />
+        <img
+          src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
+          class="avatar md"
+        />
+        <img
+          src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
+          class="avatar lg"
+        />
+      </div>
+      <div>
+        <div class="badgeAvatar">
+          <span>8</span>
+          <img
+            src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
+          />
+        </div>
+        <div class="badgeAvatar red">
+          <span>R</span>
+          <img
+            src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
+          />
+        </div>
+        <div class="badgeAvatar orange">
+          <span>8</span>
+          <img
+            src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="badgeDiv">
+      <div class="notification">
+        <button class="btn outline"><i class="fas fa-shopping-bag"></i></button>
+        <span class="badge">5</span>
+      </div>
+      <div class="notification">
+        <button class="btn outline"><i class="fas fa-envelope"></i></button>
+        <span class="badge">99+</span>
+      </div>
+    </div>
+    <div class="buttonDiv">
+      <div>
+        <button class="btn">Button</button>
+        <button class="btn outline">Button</button>
+        <button class="btn unstyled">Button</button>
+      </div>
+      <div>
+        <button class="btnFloat"><i class="fas fa-plus"></i></button>
+        <button class="btnFloat md"><i class="fas fa-plus"></i></button>
+      </div>
+      <div>
+        <div class="dropdown">
+          <button class="btn">Dropdown Button</button>
+          <div class="dropdownContent">
+            <ul>
+              <li>Home</li>
+              <li>Contact</li>
+              <li>About</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modalDiv">
+      <button class="btn hover" id="modalOpen">Modal</button>
+      <div class="modal" id="modal">
+        <div class="modalBox" id="modalBox">
+          <div class="modalHeader">
+            <h2>Heading</h2>
+            <button class="btn unstyled" id="modalClose">X</button>
+          </div>
+          <div class="modalBody">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+          <div class="modalFooter">
+            <button class="btn">Action</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn hover" id="imgModalOpen">Image Modal</button>
+      <div class="imgModal" id="imgModal">
+        <div class="flatCard">
+          <div class="imgFlat">
+            <img
+              src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/85d4f30a-91e4-44c0-a263-046a445c730b/jordan-react-elevation-pf-basketball-shoe-WhWgxz.jpg"
+            />
+          </div>
+          <div class="imgModalClose">
+            <button class="btn unstyled" id="imgModalClose">X</button>
+          </div>
+          <div class="detailFlat">
+            <h2>Jordan React Elevation PF</h2>
+            <div class="priceFlat">
+              <h4>₹10295</h4>
+              <h5>50% off</h5>
+            </div>
+            <p>
+              Play with flair, but focus on the fundamentals. The Jordan React
+              Elevation is inspired by team players who beat opponents with
+              their grit and tenacity at both ends of the court. Light and
+              durable, it offers a secure, supportive fit.Play with flair, but
+              focus on the fundamentals. The Jordan React Elevation is inspired
+              by team players who beat opponents with their grit and tenacity at
+              both ends of the court.
+            </p>
+            <div class="btnsFlat">
+              <button class="btn outline"><i class="far fa-heart"></i></button>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tooltipDiv">
+      <div class="tooltip">
+        <button class="btn outline">Hover over me</button>
+        <span class="tooltipText">Your Bucket List</span>
+      </div>
+    </div>
+    <div class="cardDiv">
+      <div class="card">
+        <div class="cardHeader">
+          <h2>Heading</h2>
+        </div>
+        <div class="cardBody">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+          </p>
+        </div>
+        <div class="cardFooter">
+          <button class="btn outline">Like</button>
+          <button class="actionBtn">Read more...</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardHeader">
+          <h2>Heading</h2>
+        </div>
+        <div class="cardImg">
+          <img
+            src="https://images.unsplash.com/photo-1553481187-be93c21490a9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+          />
+        </div>
+        <div class="cardBody">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+          </p>
+        </div>
+        <div class="cardFooter">
+          <button class="btn outline"><i class="far fa-heart"></i></button>
+          <button class="actionBtn">More..</button>
+        </div>
+      </div>
+      <div class="ecommerceCard">
+        <div class="cardBadge">
+          <h5>New</h5>
+        </div>
+        <div class="cardLike">
+          <button class="btn outline"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="cardImage">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxtc_LfP4RWXhrXJDDQyLZlEWVrlPLLhlF6LdU9UkiWlYGZfHEsSIzqU5fS7LGe6UOlHaCtpV&usqp=CAc"
+          />
+        </div>
+        <div class="cardBody">
+          <div class="cardTitle">
+            <p>boAt Airdopes 131 Bluetooth Headset</p>
+            <i class="fas fa-star"></i>4.2
+          </div>
+          <div class="cardPrice">
+            <h4>₹5999</h4>
+            <h5>50% off</h5>
+          </div>
+        </div>
+        <div class="cardFooter">
+          <button class="btn outline">Detail...</button>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="flatCard">
+        <div class="imgFlat">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8am9yZG9uJTIwc2hvZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          />
+        </div>
+        <div class="detailFlat">
+          <h2>Jordan React Elevation PF</h2>
+          <div class="priceFlat">
+            <h4>₹10295</h4>
+            <h5>50% off</h5>
+          </div>
+          <p>
+            Play with flair, but focus on the fundamentals. The Jordan React
+            Elevation is inspired by team players who beat opponents with their
+            grit and tenacity at both ends of the court. Light and durable, it
+            offers a secure, supportive fit.Play with flair, but focus on the
+            fundamentals. The Jordan React Elevation is inspired by team players
+            who beat opponents with their grit and tenacity at both ends of the
+            court.
+          </p>
+          <div class="btnsFlat">
+            <button class="btn outline"><i class="far fa-heart"></i></button>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="flatCard small">
+        <div class="imgFlat small">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8am9yZG9uJTIwc2hvZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          />
+        </div>
+        <div class="detailFlat small">
+          <h2>Jordan React Elevation PF</h2>
+          <div class="priceFlat small">
+            <h4>₹10295</h4>
+            <div>
+              <button class="btn outline">+</button>
+              3
+              <button class="btn outline">-</button>
+            </div>
+          </div>
+          <div class="btnsFlat small">
+            <button class="btn outline"><i class="far fa-heart"></i></button>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inputDiv">
+      <div class="input">
+        <label>Name</label>
+        <input placeholder="Enter name" />
+      </div>
+      <div class="password">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter Password" />
+        <button id="passwordShow">Show</button>
+      </div>
+    </div>
+    <div class="formDiv">
+      <div class="form">
+        <label>Email Address</label>
+        <input type="email" />
+        <label>Password</label>
+        <input type="password" />
+        <button class="btn">Submit</button>
+      </div>
+      <div class="formCard">
+        <h1>Login</h1>
+        <div class="formInput">
+          <label>Email</label>
+          <input placeholder="Type your email" type="email" />
+        </div>
+        <div class="formInput">
+          <label>Password</label>
+          <input placeholder="Type your password" type="password" />
+        </div>
+        <button class="formBtn">LogIn</button>
+      </div>
+    </div>
+    <div class="toastDiv">
+      <div class="toast">
+        <p><i class="fas fa-check-circle"></i> Added to Cart...</p>
+      </div>
+      <div class="toast error">
+        <p><i class="fas fa-times-circle"></i> Added to Cart...</p>
+      </div>
+      <div class="toast process">
+        <p><i class="fas fa-times-circle"></i> Added to Cart...</p>
+      </div>
+    </div>
+    <div class="spinnerDiv">
+      <div class="spinner"></div>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>

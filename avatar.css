@@ -1,0 +1,51 @@
+.avatarDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.avatar.md {
+  width: 100px;
+  height: 100px;
+}
+.avatar.lg {
+  width: 150px;
+  height: 150px;
+}
+.badgeAvatar {
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+.badgeAvatar img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.badgeAvatar span {
+  position: absolute;
+  background-color: var(--blue);
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -10px;
+  right: -10px;
+}
+.badgeAvatar.red span {
+  background-color: var(--red);
+}
+.badgeAvatar.orange span {
+  background-color: var(--orange);
+  color: black;
+}

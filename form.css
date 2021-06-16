@@ -1,0 +1,66 @@
+.formDiv {
+  margin: 1rem 0;
+}
+.form {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid rgba(78, 78, 78, 0.726);
+  border-radius: 1rem;
+  box-shadow: 0 3px 5px rgba(117, 117, 117, 0.459);
+}
+.form input {
+  width: 97%;
+  padding: 0.5rem;
+  border: 1px solid rgba(78, 78, 78, 0.726);
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.formCard {
+  width: 25rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 5px rgba(80, 80, 80, 0.651);
+  border-radius: 0.6rem;
+  padding: 1rem 2rem 3rem 2rem;
+  margin: 1rem;
+}
+.formInput {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.formCard input {
+  height: 30px;
+  border-radius: 0.3rem;
+  border: none;
+  border-bottom: 1px solid rgba(53, 53, 53, 0.527);
+  box-shadow: 1px 1px 1px rgba(73, 73, 73, 0.39);
+  padding: 0.5rem;
+}
+.formBtn {
+  margin: 1rem;
+  width: 85%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  background: none;
+  border: none;
+  background-color: var(--orange);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .form {
+    width: 15rem;
+  }
+  .formCard {
+    width: 14rem;
+  }
+}

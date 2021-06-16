@@ -1,0 +1,47 @@
+.input {
+  width: 30rem;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  text-align: center;
+  margin: 0.3rem;
+  box-shadow: 0 3px 5px rgba(117, 117, 117, 0.459);
+  margin-bottom: 0.5rem;
+}
+.input label {
+  background-color: var(--whitePale);
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.input input {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+}
+.password {
+  width: 30rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  text-align: center;
+  margin: 0.3rem;
+  box-shadow: 0 3px 5px rgba(117, 117, 117, 0.459);
+}
+.password label {
+  background-color: var(--whitePale);
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.password input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .input {
+    width: 18rem;
+  }
+  .password {
+    width: 18rem;
+  }
+}
